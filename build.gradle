@@ -1,0 +1,40 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.3'
+	id 'io.spring.dependency-management' version '1.0.13.RELEASE'
+	id 'java'
+}
+
+group = 'com.poketrirx.marble'
+version = '0.0.1-SNAPSHOT'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.data:spring-data-jpa:2.7.2'
+	implementation 'javax.persistence:javax.persistence-api:2.2'
+	implementation 'io.dropwizard.metrics:metrics-core:4.2.12'
+
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation 'com.amazonaws:aws-java-sdk-dynamodb:1.12.296'
+	implementation 'com.github.derjust:spring-data-dynamodb:5.1.0'
+
+	implementation 'io.astefanutti.metrics.aspectj:metrics-aspectj:1.2.0'
+	implementation 'io.astefanutti.metrics.aspectj:metrics-aspectj-deps:1.2.0'
+	implementation 'org.codehaus.mojo:aspectj-maven-plugin:1.14.0'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
