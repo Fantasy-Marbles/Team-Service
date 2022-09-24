@@ -1,11 +1,11 @@
 package com.poketrirx.marble.teamservice.teams.impl.repositories.inmemory.criteria;
 
+import java.util.stream.Stream;
+
 import com.poketrirx.marble.framework.data.common.Criterion;
 import com.poketrirx.marble.framework.data.inmemory.CriterionHandler;
 import com.poketrirx.marble.teamservice.teams.pub.models.Team;
 import com.poketrirx.marble.teamservice.teams.pub.repositories.criteria.IdCriterion;
-
-import java.util.stream.Stream;
 
 public final class IdCriterionHandler implements CriterionHandler<Team> {
     @Override

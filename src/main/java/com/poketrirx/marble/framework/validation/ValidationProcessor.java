@@ -1,9 +1,6 @@
 package com.poketrirx.marble.framework.validation;
 
 import com.google.common.collect.ImmutableList;
-import com.poketrirx.marble.framework.validation.Validator;
-import com.poketrirx.marble.framework.validation.ValidatorResultReason;
-import com.poketrirx.marble.framework.validation.ValidatorResult;
 import lombok.Builder;
 import lombok.NonNull;
 import lombok.Singular;

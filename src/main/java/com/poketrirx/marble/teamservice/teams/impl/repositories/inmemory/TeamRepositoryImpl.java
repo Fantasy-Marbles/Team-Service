@@ -1,6 +1,8 @@
 package com.poketrirx.marble.teamservice.teams.impl.repositories.inmemory;
 
 import com.google.common.collect.ImmutableList;
+import org.springframework.stereotype.Component;
+
 import com.poketrirx.marble.framework.data.common.Criterion;
 import com.poketrirx.marble.framework.data.inmemory.BaseInMemoryRepository;
 import com.poketrirx.marble.framework.data.inmemory.CriteriaProcessor;
@@ -13,7 +15,6 @@ import com.poketrirx.marble.teamservice.teams.impl.repositories.inmemory.hints.S
 import com.poketrirx.marble.teamservice.teams.pub.models.Team;
 import com.poketrirx.marble.teamservice.teams.pub.repositories.TeamRepository;
 import com.poketrirx.marble.teamservice.teams.pub.repositories.criteria.IdCriterion;
-import org.springframework.stereotype.Component;
 
 @Component
 public final class TeamRepositoryImpl extends BaseInMemoryRepository<Team> implements TeamRepository {

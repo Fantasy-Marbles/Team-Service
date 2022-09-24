@@ -1,11 +1,11 @@
 package com.poketrirx.marble.teamservice.teams.impl.repositories.inmemory.hints;
 
+import java.util.stream.Stream;
+
 import com.poketrirx.marble.framework.data.common.Hint;
 import com.poketrirx.marble.framework.data.inmemory.HintHandler;
 import com.poketrirx.marble.teamservice.teams.pub.models.Team;
 import com.poketrirx.marble.teamservice.teams.pub.repositories.hints.PageHint;
-
-import java.util.stream.Stream;
 
 public final class PageHintHandler implements HintHandler<Team> {
     @Override

@@ -1,12 +1,13 @@
 package com.poketrirx.marble.framework.validation;
 
 import com.google.common.collect.ImmutableList;
-import com.poketrirx.marble.framework.exceptions.InvalidResourceException;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.NonNull;
 import lombok.Singular;
 import lombok.ToString;
+
+import com.poketrirx.marble.framework.exceptions.InvalidResourceException;
 
 /**
  * A pojo that describes if a resource is valid or invalid.

@@ -1,8 +1,9 @@
 package com.poketrirx.marble.teamservice;
 
-import com.poketrirx.marble.framework.config.MarbleFrameworkConfig;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+
+import com.poketrirx.marble.framework.config.MarbleFrameworkConfig;
 
 @Import(MarbleFrameworkConfig.class)
 @Configuration

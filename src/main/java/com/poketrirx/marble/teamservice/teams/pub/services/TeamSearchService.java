@@ -1,6 +1,7 @@
 package com.poketrirx.marble.teamservice.teams.pub.services;
 
 import com.google.common.collect.ImmutableList;
+
 import com.poketrirx.marble.framework.data.common.Criterion;
 import com.poketrirx.marble.framework.data.common.Hint;
 import com.poketrirx.marble.teamservice.teams.pub.models.Team;
