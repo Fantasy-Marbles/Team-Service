@@ -8,17 +8,17 @@ import java.util.stream.Stream;
 import com.google.common.collect.ImmutableList;
 import org.springframework.stereotype.Component;
 
-import com.poketrirx.marble.framework.data.common.BaseRepository;
+import com.poketrirx.marble.framework.data.common.Repository;
 import com.poketrirx.marble.framework.data.common.Criterion;
 import com.poketrirx.marble.framework.data.common.Hint;
 
 @Component
-public abstract class BaseInMemoryRepository<T> implements BaseRepository<T> {
+public abstract class InMemoryRepository<T> implements Repository<T> {
     private final CriteriaProcessor<T> criteriaProcessor;
     private final HintProcessor<T> hintProcessor;
     private final List<T> listData;
 
-    public BaseInMemoryRepository() {
+    public InMemoryRepository() {
         criteriaProcessor = buildCriteriaProcessor();
         hintProcessor = buildHintProcessor();
         listData = new ArrayList<>();

@@ -3,16 +3,16 @@ package com.poketrirx.marble.framework.data.dynamodb;
 import com.google.common.collect.ImmutableList;
 import org.springframework.stereotype.Component;
 
-import com.poketrirx.marble.framework.data.common.BaseRepository;
+import com.poketrirx.marble.framework.data.common.Repository;
 import com.poketrirx.marble.framework.data.common.Criterion;
 import com.poketrirx.marble.framework.data.common.Hint;
 
 @Component
-public abstract class BaseDynamoDbRepository<T> implements BaseRepository<T> {
+public abstract class DynamoDbRepository<T> implements Repository<T> {
     //private final CriteriaProcessor criteriaProcessor = CriteriaProcessor.builder().build();
     //private final HintProcessor hintProcessor = HintProcessor.builder().build();
 
-    public BaseDynamoDbRepository() {
+    public DynamoDbRepository() {
     }
 
     @Override
